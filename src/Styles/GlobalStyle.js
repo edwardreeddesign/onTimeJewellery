@@ -32,6 +32,11 @@ h1, h2, h3, a {
     font-family: var(--ffTitle);
     letter-spacing: .05rem;
 }
+
+a {
+    text-decoration: none;
+    color: var(--clr-dark);
+  }
     
 `;
 

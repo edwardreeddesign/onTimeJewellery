@@ -1,16 +1,30 @@
 import React from "react";
 import styled from "styled-components";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  // const { pathname} = useLocation()
   return (
     <StyledNav>
       <ul>
-        <li>HOME</li>
-        <li>WEDDINGS</li>
-        <li>JEWELLERY</li>
-        <li>GIFTS</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
+        <li>
+          <Link to="/">HOME</Link>
+        </li>
+        <li>
+          <Link to="/weddings">WEDDINGS</Link>
+        </li>
+        <li>
+          <Link to="/jewellery">JEWELLERY</Link>
+        </li>
+        <li>
+          <Link to="/gifts">GIFTS</Link>
+        </li>
+        <li>
+          <Link to="/about">ABOUT</Link>
+        </li>
+        <li>
+          <Link to="/contact">CONTACT</Link>
+        </li>
       </ul>
     </StyledNav>
   );
